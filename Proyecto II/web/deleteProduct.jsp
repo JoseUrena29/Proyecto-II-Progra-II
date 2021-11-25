@@ -7,7 +7,7 @@
     public void jspInit() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost/website", "root", "vargas");
+            con = DriverManager.getConnection("jdbc:mysql://localhost/website", "root", "12345678");
             ps = con.prepareStatement("DELETE FROM products WHERE id = ?");
         } catch (Exception ex) {
             ex.printStackTrace();
