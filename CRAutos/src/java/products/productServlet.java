@@ -60,8 +60,8 @@ public class productServlet extends HttpServlet {
             out.print("    <tr>");
             out.print("      <th scope=\"col\">id</th>");
             out.print("      <th scope=\"col\">Name</th>");
-            out.print("      <th scope=\"col\">Email</th>");
-            out.print("      <th scope=\"col\">Telefono</th>");
+            out.print("      <th scope=\"col\">Price</th>");
+            out.print("      <th scope=\"col\">User</th>");
             out.print("    </tr>");
             out.print("  </thead>");
             out.print("  <tbody>");
