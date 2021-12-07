@@ -24,7 +24,7 @@
     }
 %>
 
-<%    
+<%
     int id = Integer.parseInt(request.getParameter("id"));
 
     ps.setInt(1, id);

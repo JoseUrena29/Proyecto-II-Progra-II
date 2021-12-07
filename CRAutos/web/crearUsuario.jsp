@@ -34,9 +34,9 @@
     String email = request.getParameter("txtEmail");
     int telefono = Integer.parseInt(request.getParameter("txtTelefono"));
 
-    ps.setString(1,name);
-    ps.setString(2,email);
-    ps.setInt(3,telefono);
+    ps.setString(1, name);
+    ps.setString(2, email);
+    ps.setInt(3, telefono);
 
     ps.executeUpdate();
 %>

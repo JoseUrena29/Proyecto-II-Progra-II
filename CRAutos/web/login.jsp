@@ -32,9 +32,9 @@
             <form id="form2" action="Usuario.html">
                 <input type="submit" value="Registrarse" />
             </form>
-        <div id="referencias">
-            <a href="index.html">Regresar a la Pagina Principal</a>
+            <div id="referencias">
+                <a href="index.html">Regresar a la Pagina Principal</a>
+            </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>

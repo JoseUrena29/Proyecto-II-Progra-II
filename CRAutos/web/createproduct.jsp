@@ -34,11 +34,11 @@
     ps.setString(2, name);
     ps.setInt(3, price);
     ps.setString(4, user);
-    
+
     ps.executeUpdate();
 %>
 
-<% 
+<%
     request.getRequestDispatcher("productServlet").forward(request, response);
 %>
 
