@@ -29,15 +29,12 @@
             </form>
         </div>
         <div id="contenedor2">
-            <form id ="form2">
-                <input type="submit" value="Registrarse"/>
+            <form id="form2" action="Usuario.html">
+                <input type="submit" value="Registrarse" />
             </form>
-            <div id="referencias">
-                <a href="index.html">Regresar a la Pagina Principal</a>
-            </div>
-            <form id ="form2">
-
-            </form>
+        <div id="referencias">
+            <a href="index.html">Regresar a la Pagina Principal</a>
         </div>
-    </body>
+    </div>
+</body>
 </html>
