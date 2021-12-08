@@ -8,6 +8,10 @@
         <servlet-name>registroUsuario</servlet-name>
         <servlet-class>products.registroUsuario</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>loginUsuario</servlet-name>
+        <servlet-class>products.loginUsuario</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>productServlet</servlet-name>
         <url-pattern>/productServlet</url-pattern>
@@ -15,6 +19,10 @@
     <servlet-mapping>
         <servlet-name>registroUsuario</servlet-name>
         <url-pattern>/registroUsuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>loginUsuario</servlet-name>
+        <url-pattern>/loginUsuario</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
