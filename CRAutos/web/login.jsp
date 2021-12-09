@@ -15,7 +15,7 @@
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <div class="container-fluid">
-                <a href="Principal.html"><span class="logo"><img class="img-responsive" src="imagen/crautoslogo.png" hspace="5" vspace="8" width="300"></span></a>
+                <a href="Principal.jsp"><span class="logo"><img class="img-responsive" src="imagen/crautoslogo.png" hspace="5" vspace="8" width="300"></span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -40,11 +40,11 @@
             </form>
         </div>
         <div id="contenedor2">
-            <form id="form2" action="Usuario.html">
+            <form id="form2" action="Usuario.jsp">
                 <input type="submit" value="Registrarse" />
             </form>
             <div id="referencias">
-                <a href="index.html">Regresar a la Pagina Principal</a>
+                <a href="Principal.jsp">Regresar a la Pagina Principal</a>
             </div>
         </div>
     </body>

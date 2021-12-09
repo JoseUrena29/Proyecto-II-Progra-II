@@ -10,5 +10,6 @@ package modelo;
  * @author LEANDRO
  */
 public interface Validar {
+
     public int validar(Persona per);
 }

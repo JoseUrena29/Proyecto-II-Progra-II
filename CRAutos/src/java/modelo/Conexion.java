@@ -13,15 +13,17 @@ import java.sql.DriverManager;
  * @author LEANDRO
  */
 public class Conexion {
+
     Connection con;
-    public Connection getConnection(){
+
+    public Connection getConnection() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://localhost/website", "root", "12345678");
-            
+
         } catch (Exception e) {
         }
         return con;
     }
-    
+
 }

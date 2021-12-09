@@ -1,9 +1,10 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+<%-- 
+    Document   : registroAutos
+    Created on : 9 dic 2021, 5:19:37
+    Author     : LEANDRO
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -29,7 +30,7 @@ and open the template in the editor.
                 <div class="row align-items-stretch justify-content-between">
                     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
                         <div class="container-fluid">
-                            <a href="Principal.html"><span class="logo"><img class="img-responsive" src="imagen/crautoslogo.png" hspace="5" vspace="8" width="300"></span></a>
+                            <a href="Principal.jsp"><span class="logo"><img class="img-responsive" src="imagen/crautoslogo.png" hspace="5" vspace="8" width="300"></span></a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
@@ -107,7 +108,7 @@ and open the template in the editor.
                                 <option>Sedán</option>
                                 <option>Todoterreno/SUV</option>
                                 <option>Urbano</option>
-                                
+
                             </select>
                         </div>
                         <button id="btnSave" class="btn btn-primary" type="submit">Registrar Vehiculo</button>    
@@ -117,13 +118,3 @@ and open the template in the editor.
         </div>
     </body>
 </html>
-<!--
-show databases 
-drop database website
-create database website
-use website
-show tables
-create table products (id int, name varchar(50), price int, user varchar(50))
-select * from products
-INSERT INTO products VALUES (2, 'Pepsi', 1000, 'bsandi')
--->

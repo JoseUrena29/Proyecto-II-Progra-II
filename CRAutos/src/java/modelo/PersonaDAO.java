@@ -20,12 +20,11 @@ public class PersonaDAO implements Validar {
     PreparedStatement ps;
     ResultSet rs;
 
-    int r = 0;
-
     @Override
     public int validar(Persona per) {
         String sql = "Select * from users where firstName=? and email=?";
         try {
+            int r = 0;
             con = cn.getConnection();
             ps = con.prepareStatement(sql);
             ps.setString(1, per.getNombre());

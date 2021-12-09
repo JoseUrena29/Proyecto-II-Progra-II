@@ -1,3 +1,10 @@
+<%-- 
+    Document   : Usuario
+    Created on : 9 dic 2021, 5:15:44
+    Author     : LEANDRO
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -26,7 +33,7 @@
 
             </form>
             <div id="referencias">
-                <a href="index.html">Regresar a la Pagina Principal</a>
+                <a href="Principal.jsp">Regresar a la Pagina Principal</a>
             </div>
         </div>
     </body>

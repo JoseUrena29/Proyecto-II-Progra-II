@@ -57,7 +57,7 @@ public class productServlet extends HttpServlet {
 
             out.print("<nav class=\"navbar navbar-expand-lg navbar-dark bg-primary\">");
             out.print("<div class=\"container-fluid\">");
-            out.print("<a href=\"Principal.html\"><span class=\"logo\"><img class=\"img-responsive\" src=\"imagen/crautoslogo.png\" hspace=\"5\" vspace=\"8\" width=\"300\"></span></a>");
+            out.print("<a href=\"Principal.jsp\"><span class=\"logo\"><img class=\"img-responsive\" src=\"imagen/crautoslogo.png\" hspace=\"5\" vspace=\"8\" width=\"300\"></span></a>");
             out.print("<button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">");
             out.print("<span class=\"navbar-toggler-icon\"></span>");
             out.print("</button>");
@@ -68,7 +68,7 @@ public class productServlet extends HttpServlet {
             out.print("</div>");
             out.print("</div>");
             out.print("</nav>");
-            
+
             out.print("<br><br>");
             out.print("<div class=\"container\">");
             out.print("<table class=\"table table-hover\">");
@@ -93,7 +93,7 @@ public class productServlet extends HttpServlet {
 
             out.print(" </tbody>");
             out.print("</table>");
-            out.print("<a href='index.html'>Create another</a>");
+            out.print("<a href='registroAutos.jsp'>Create another</a>");
             out.print("</div>");
             out.print(" <script type='text/javascript'>");
             out.print("     function verDetalle(id, name, price){");

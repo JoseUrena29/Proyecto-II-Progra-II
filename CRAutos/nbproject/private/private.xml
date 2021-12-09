@@ -3,13 +3,22 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/LEANDRO/Trabajos%20de%20la%20U/Programación%20de%20Computadoras%20II/Proyectos%20Programados/Repositorio%20Proyecto%20Programado%202/CRAutos/web/Usuario.html</file>
             <file>file:/D:/LEANDRO/Trabajos%20de%20la%20U/Programación%20de%20Computadoras%20II/Proyectos%20Programados/Repositorio%20Proyecto%20Programado%202/CRAutos/web/login.jsp</file>
-            <file>file:/D:/LEANDRO/Trabajos%20de%20la%20U/Programación%20de%20Computadoras%20II/Proyectos%20Programados/Repositorio%20Proyecto%20Programado%202/CRAutos/web/index.html</file>
-            <file>file:/D:/LEANDRO/Trabajos%20de%20la%20U/Programación%20de%20Computadoras%20II/Proyectos%20Programados/Repositorio%20Proyecto%20Programado%202/CRAutos/web/Login.html</file>
+            <file>file:/D:/LEANDRO/Trabajos%20de%20la%20U/Programación%20de%20Computadoras%20II/Proyectos%20Programados/Repositorio%20Proyecto%20Programado%202/CRAutos/web/updateProduct.jsp</file>
+            <file>file:/D:/LEANDRO/Trabajos%20de%20la%20U/Programación%20de%20Computadoras%20II/Proyectos%20Programados/Repositorio%20Proyecto%20Programado%202/CRAutos/web/crearUsuario.jsp</file>
+            <file>file:/D:/LEANDRO/Trabajos%20de%20la%20U/Programación%20de%20Computadoras%20II/Proyectos%20Programados/Repositorio%20Proyecto%20Programado%202/CRAutos/src/java/modelo/Validar.java</file>
+            <file>file:/D:/LEANDRO/Trabajos%20de%20la%20U/Programación%20de%20Computadoras%20II/Proyectos%20Programados/Repositorio%20Proyecto%20Programado%202/CRAutos/web/Principal.jsp</file>
+            <file>file:/D:/LEANDRO/Trabajos%20de%20la%20U/Programación%20de%20Computadoras%20II/Proyectos%20Programados/Repositorio%20Proyecto%20Programado%202/CRAutos/web/registroAutos.jsp</file>
+            <file>file:/D:/LEANDRO/Trabajos%20de%20la%20U/Programación%20de%20Computadoras%20II/Proyectos%20Programados/Repositorio%20Proyecto%20Programado%202/CRAutos/web/deleteProduct.jsp</file>
+            <file>file:/D:/LEANDRO/Trabajos%20de%20la%20U/Programación%20de%20Computadoras%20II/Proyectos%20Programados/Repositorio%20Proyecto%20Programado%202/CRAutos/src/java/products/registroUsuario.java</file>
+            <file>file:/D:/LEANDRO/Trabajos%20de%20la%20U/Programación%20de%20Computadoras%20II/Proyectos%20Programados/Repositorio%20Proyecto%20Programado%202/CRAutos/web/Usuario.jsp</file>
+            <file>file:/D:/LEANDRO/Trabajos%20de%20la%20U/Programación%20de%20Computadoras%20II/Proyectos%20Programados/Repositorio%20Proyecto%20Programado%202/CRAutos/src/java/products/productServlet.java</file>
+            <file>file:/D:/LEANDRO/Trabajos%20de%20la%20U/Programación%20de%20Computadoras%20II/Proyectos%20Programados/Repositorio%20Proyecto%20Programado%202/CRAutos/web/editProduct.jsp</file>
+            <file>file:/D:/LEANDRO/Trabajos%20de%20la%20U/Programación%20de%20Computadoras%20II/Proyectos%20Programados/Repositorio%20Proyecto%20Programado%202/CRAutos/web/autos.html</file>
+            <file>file:/D:/LEANDRO/Trabajos%20de%20la%20U/Programación%20de%20Computadoras%20II/Proyectos%20Programados/Repositorio%20Proyecto%20Programado%202/CRAutos/src/java/modelo/Persona.java</file>
             <file>file:/D:/LEANDRO/Trabajos%20de%20la%20U/Programación%20de%20Computadoras%20II/Proyectos%20Programados/Repositorio%20Proyecto%20Programado%202/CRAutos/src/java/modelo/Conexion.java</file>
             <file>file:/D:/LEANDRO/Trabajos%20de%20la%20U/Programación%20de%20Computadoras%20II/Proyectos%20Programados/Repositorio%20Proyecto%20Programado%202/CRAutos/src/java/controlador/Controlador.java</file>
-            <file>file:/D:/LEANDRO/Trabajos%20de%20la%20U/Programación%20de%20Computadoras%20II/Proyectos%20Programados/Repositorio%20Proyecto%20Programado%202/CRAutos/web/Principal.html</file>
+            <file>file:/D:/LEANDRO/Trabajos%20de%20la%20U/Programación%20de%20Computadoras%20II/Proyectos%20Programados/Repositorio%20Proyecto%20Programado%202/CRAutos/src/java/modelo/PersonaDAO.java</file>
         </group>
     </open-files>
 </project-private>

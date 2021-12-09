@@ -34,10 +34,14 @@ public class Controlador extends HttpServlet {
             p.setCorreo(correo);
             r = dao.validar(p);
             if (r == 1) {
+                request.getSession().setAttribute("nom", nom);
+                request.getSession().setAttribute("correo", correo);
                 request.getRequestDispatcher("Principal.jsp").forward(request, response);
             } else {
                 request.getRequestDispatcher("login.jsp").forward(request, response);
             }
+        } else {
+            request.getRequestDispatcher("login.jsp").forward(request, response);
         }
     }
 
