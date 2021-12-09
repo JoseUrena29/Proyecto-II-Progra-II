@@ -74,10 +74,10 @@ public class productServlet extends HttpServlet {
             out.print("<table class=\"table table-hover\">");
             out.print("  <thead>");
             out.print("    <tr>");
-            out.print("      <th scope=\"col\">id</th>");
-            out.print("      <th scope=\"col\">Name</th>");
-            out.print("      <th scope=\"col\">Price</th>");
-            out.print("      <th scope=\"col\">User</th>");
+            out.print("      <th scope=\"col\">Marca</th>");
+            out.print("      <th scope=\"col\">Modelo</th>");
+            out.print("      <th scope=\"col\">Año</th>");
+            out.print("      <th scope=\"col\">Estilo</th>");
             out.print("    </tr>");
             out.print("  </thead>");
             out.print("  <tbody>");
