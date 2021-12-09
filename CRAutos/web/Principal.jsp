@@ -1,9 +1,11 @@
+<%-- 
+    Document   : Principal.jsp
+    Created on : 9 dic 2021, 4:39:35
+    Author     : LEANDRO
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <meta charset="UTF-8">
@@ -117,13 +119,3 @@ and open the template in the editor.
         </div>
     </body>
 </html>
-<!--
-show databases 
-drop database website
-create database website
-use website
-show tables
-create table products (id int, name varchar(50), price int, user varchar(50))
-select * from products
-INSERT INTO products VALUES (2, 'Pepsi', 1000, 'bsandi')
--->

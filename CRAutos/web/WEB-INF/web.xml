@@ -12,6 +12,18 @@
         <servlet-name>loginUsuario</servlet-name>
         <servlet-class>products.loginUsuario</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Persona</servlet-name>
+        <servlet-class>modelo.Persona</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PersonaDAO</servlet-name>
+        <servlet-class>modelo.PersonaDAO</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Controlador</servlet-name>
+        <servlet-class>controlador.Controlador</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>productServlet</servlet-name>
         <url-pattern>/productServlet</url-pattern>
@@ -23,6 +35,18 @@
     <servlet-mapping>
         <servlet-name>loginUsuario</servlet-name>
         <url-pattern>/loginUsuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Persona</servlet-name>
+        <url-pattern>/Persona</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PersonaDAO</servlet-name>
+        <url-pattern>/PersonaDAO</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Controlador</servlet-name>
+        <url-pattern>/Controlador</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
