@@ -58,6 +58,7 @@ public class registroUsuario extends HttpServlet {
             out.print("<table class=\"table table-hover\">");
             out.print("  <thead>");
             out.print("    <tr>");
+            out.print("      <th scope=\"col\">ID</th>");
             out.print("      <th scope=\"col\">Name</th>");
             out.print("      <th scope=\"col\">Email</th>");
             out.print("      <th scope=\"col\">Telefono</th>");
@@ -66,15 +67,16 @@ public class registroUsuario extends HttpServlet {
             out.print("  <tbody>");
 
             while (resultSet.next()) {
-                out.print("      <th scope=\"row\">" + resultSet.getString(1) + "</th>");
+                out.print("      <th scope=\"row\">" + resultSet.getInt(1) + "</th>");
                 out.print("      <td>" + resultSet.getString(2) + "</td>");
-                out.print("      <td>" + resultSet.getInt(3) + "</td>");
+                out.print("      <td>" + resultSet.getString(3) + "</td>");
+                out.print("      <td>" + resultSet.getInt(4) + "</td>");
                 out.print("    </tr>");
             }
 
             out.print(" </tbody>");
             out.print("</table>");
-            out.print("<a href='index.html'>Create another</a>");
+            out.print("<a href='login.jsp'>Regresar al LoginCRAutos</a>");
             out.print("</div>");
             out.print("</body>");
             out.print("</html>");

@@ -13,7 +13,7 @@
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://localhost/website", "root", "12345678");
-            ps = con.prepareStatement("INSERT INTO users VALUES (?, ?, ?)");
+            ps = con.prepareStatement("INSERT INTO users (firstName,email,telefono) VALUES (?,?,?)");
         } catch (Exception ex) {
             ex.printStackTrace();
         }

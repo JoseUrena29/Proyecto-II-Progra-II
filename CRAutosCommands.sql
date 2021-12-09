@@ -8,8 +8,13 @@ use website
 
 show tables
 
-CREATE TABlE users (id int,firstName varchar(30), email varchar(30), telefono int)
-INSERT INTO users VALUES (1,'leandro', 'leandro9700@gmail.com', '62166673')
+
+CREATE TABlE users (id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,firstName varchar(30) NOT NULL, email varchar(30) NOT NULL, telefono int NOT NULL)
+
+INSERT INTO users (firstName, email,telefono) values ('leandro','leandro9700@gmail.com', 62166673)
+
+INSERT INTO users (firstName, email,telefono) values ('jose','jose23@gmail.com', 63178567)
+
 SELECT * FROM users
 
 truncate table users
