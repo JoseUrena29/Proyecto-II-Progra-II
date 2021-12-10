@@ -20,6 +20,9 @@ truncate table users
 
 CREATE TABLE autos(id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,marca varchar(30) NOT NULL, modelo varchar(30) NOT NULL,anio int NOT NULL,estilo varchar(30) NOT NULL)
 
+INSERT INTO autos (id,marca,modelo,anio,estilo) values(1,'Audi','Serie3',2010,'Coupe')
+INSERT INTO autos (id,marca,modelo,anio,estilo) values(2,'Audi','Serie3',2010,'Coupe')
+
 SELECT * FROM autos
 
 truncate table autos

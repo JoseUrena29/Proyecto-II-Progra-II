@@ -46,7 +46,7 @@ public class usuarioRegistro extends HttpServlet {
             out.print("<title>Registro de Usuarios</title>");
             out.print("</head>");
             out.print("<body>");
-            
+
             out.print("<nav class=\"navbar navbar-expand-lg navbar-dark bg-primary\">");
             out.print("<div class=\"container-fluid\">");
             out.print("<a href=\"Principal.jsp\"><span class=\"logo\"><img class=\"img-responsive\" src=\"imagen/crautoslogo.png\" hspace=\"5\" vspace=\"8\" width=\"300\"></span></a>");
@@ -60,9 +60,9 @@ public class usuarioRegistro extends HttpServlet {
             out.print("</div>");
             out.print("</div>");
             out.print("</nav>");
-            
+
             out.print("<br><br><br>");
-            
+
             out.print("<div class=\"container\">");
             out.print("<table class=\"table table-hover\">");
             out.print("  <thead>");

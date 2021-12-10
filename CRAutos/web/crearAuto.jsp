@@ -4,9 +4,6 @@
     Author     : LEANDRO
 --%>
 
-<%@page import="java.io.InputStream"%>
-<%@page import="java.io.File"%>
-
 <%@page language="java" import="java.sql.*" contentType="text/html" pageEncoding="UTF-8"%>
 <%!
     Connection con;
@@ -47,5 +44,5 @@
 %>
 
 <%
-    request.getRequestDispatcher("registrarAutosServlet").forward(request, response);
+    request.getRequestDispatcher("Principal.jsp").forward(request, response);
 %>

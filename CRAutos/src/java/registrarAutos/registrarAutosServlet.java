@@ -42,7 +42,7 @@ public class registrarAutosServlet extends HttpServlet {
             out.print("<script src=\"https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js\" integrity=\"sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN\" crossorigin=\"anonymous\"></script>");
             out.print("<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js\" integrity=\"sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/\" crossorigin=\"anonymous\"></script>");
             out.print("<link href=\"css/estilo.css\" rel=\"stylesheet\" type=\"text/css\"/>");
-            
+
             out.print("<title>Autos Disponibles</title>");
             out.print("</head>");
             out.print("<body>");
@@ -60,7 +60,7 @@ public class registrarAutosServlet extends HttpServlet {
             out.print("</div>");
             out.print("</div>");
             out.print("</nav>");
-            
+
             out.print("<br><br>");
             out.print("<div class=\"container\">");
             out.print("<table class=\"table table-hover\">");
@@ -91,8 +91,9 @@ public class registrarAutosServlet extends HttpServlet {
             out.print("</body>");
             out.print("</html>");
 
-            statement.close();
             resultSet.close();
+            statement.close();
+            connection.close();
         } catch (Exception e) {
             {
                 out.println(e.getMessage());

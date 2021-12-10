@@ -4,7 +4,8 @@
     Author     : LEANDRO
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page language="java" import="java.sql.*"  contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -58,7 +59,7 @@
         <div class="footer">
             <a href="https://marchamo.ins-cr.com/Marchamo/frmConsultaMarchamo.aspx" target="_blank">
                 <h3 class="greenfont"><b>CONSULTA TU MARCHAMO AQUI</b></h3></a>  
-        </div>>
+        </div>
 
 
 
@@ -114,6 +115,6 @@
                 </div>
             </div>
         </section>
-        <!--Footer End-->      
+        <br><br>
     </body>
 </html>
