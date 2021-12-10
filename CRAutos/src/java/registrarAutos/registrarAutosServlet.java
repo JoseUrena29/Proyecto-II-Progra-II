@@ -7,6 +7,10 @@ package registrarAutos;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -18,45 +22,66 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class registrarAutosServlet extends HttpServlet {
 
-    /**
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        try ( PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet registrarAutosServlet</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet registrarAutosServlet at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
-        }
-    }
-
-    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
-    /**
-     * Handles the HTTP <code>GET</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        response.setContentType("text/html;charset=UTF-8");
+        PrintWriter out = response.getWriter();
+
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/website", "root", "12345678");
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("select * from autos");
+
+            out.print("<html lang=\"en\">");
+            out.print("<head>");
+            out.print("<meta charset=\"UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">");
+            out.print("<link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU\" crossorigin=\"anonymous\">");
+            out.print("<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ\" crossorigin=\"anonymous\"></script>");
+            out.print("<script src=\"https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js\" integrity=\"sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN\" crossorigin=\"anonymous\"></script>");
+            out.print("<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js\" integrity=\"sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/\" crossorigin=\"anonymous\"></script>");
+            out.print("<title>Website</title>");
+            out.print("</head>");
+            out.print("<body>");
+
+            out.print("<div class=\"container\">");
+            out.print("<table class=\"table table-hover\">");
+            out.print("  <thead>");
+            out.print("    <tr>");
+            out.print("      <th scope=\"col\">ID</th>");
+            out.print("      <th scope=\"col\">Marca</th>");
+            out.print("      <th scope=\"col\">Modelo</th>");
+            out.print("      <th scope=\"col\">Año</th>");
+            out.print("      <th scope=\"col\">Estilo</th>");
+            out.print("    </tr>");
+            out.print("  </thead>");
+            out.print("  <tbody>");
+
+            while (resultSet.next()) {
+                out.print("      <th scope=\"row\">" + resultSet.getInt(1) + "</th>");
+                out.print("      <td>" + resultSet.getString(2) + "</td>");
+                out.print("      <td>" + resultSet.getString(3) + "</td>");
+                out.print("      <td>" + resultSet.getInt(4) + "</td>");
+                out.print("      <td>" + resultSet.getString(5) + "</td>");
+                out.print("    </tr>");
+            }
+
+            out.print(" </tbody>");
+            out.print("</table>");
+            out.print("<a href='registroAutos.jsp'>Registrar otro Auto</a>");
+            out.print("</div>");
+            out.print("</body>");
+            out.print("</html>");
+
+            statement.close();
+            resultSet.close();
+        } catch (Exception e) {
+            {
+                out.println(e.getMessage());
+            }
+        }
+
     }
 
     /**
@@ -70,7 +95,6 @@ public class registrarAutosServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
     }
 
     /**

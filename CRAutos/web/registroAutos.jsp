@@ -51,10 +51,10 @@
                     Registro de Vehiculos
                 </div>
                 <div class="card-body">
-                    <form action="createproduct.jsp">
+                    <form action="crearAuto.jsp">
                         <div class="mb-3">
                             <label class="form-label">Marca</label>
-                            <select name="txtId" class="form-control">
+                            <select name="txtMarca" class="form-control">
                                 <option>Audi</option>
                                 <option>BMW</option>
                                 <option>Chevrolet</option>
@@ -83,15 +83,15 @@
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Modelo</label>
-                            <input type="text" class="form-control" name="txtName" >
+                            <input type="text" class="form-control" name="txtModelo" >
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Año</label>
-                            <input type="text" class="form-control" name="txtPrice">
+                            <input type="text" class="form-control" name="txtAnio">
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Estilo</label>
-                            <select name="txtUser" class="form-control">
+                            <select name="txtEstilo" class="form-control">
                                 <option>Autocaravana</option>
                                 <option>Berlina</option>
                                 <option>Coupé</option>
