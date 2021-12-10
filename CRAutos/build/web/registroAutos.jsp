@@ -22,7 +22,7 @@
                 integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
         crossorigin="anonymous"></script>
         <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
-        <title>CRAutos</title>
+        <title>Registro de Autos</title>
     </head>
     <body>
         <header>

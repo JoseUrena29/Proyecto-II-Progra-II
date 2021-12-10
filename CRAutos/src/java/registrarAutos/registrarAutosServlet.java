@@ -43,7 +43,7 @@ public class registrarAutosServlet extends HttpServlet {
             out.print("<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js\" integrity=\"sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/\" crossorigin=\"anonymous\"></script>");
             out.print("<link href=\"css/estilo.css\" rel=\"stylesheet\" type=\"text/css\"/>");
             
-            out.print("<title>Registro de Autos</title>");
+            out.print("<title>Autos Disponibles</title>");
             out.print("</head>");
             out.print("<body>");
 
