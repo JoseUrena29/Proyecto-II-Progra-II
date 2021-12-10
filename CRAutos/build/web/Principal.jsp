@@ -34,7 +34,7 @@
                             <a class="nav-link active" aria-current="page" href="registroAutos.jsp">Registro de Autos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="productServlet">Autos Disponibles</a>
+                            <a class="nav-link active" aria-current="page" href="registrarAutosServlet">Autos Disponibles</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="autos.html">Autos</a>                        
