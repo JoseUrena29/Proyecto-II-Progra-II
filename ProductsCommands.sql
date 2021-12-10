@@ -11,6 +11,9 @@ show tables
 CREATE TABlE products (id int, name varchar(50), price int, user varchar(50))
 SELECT * FROM products
 
+CREATE TABlE users (name varchar(50), email varchar(50), telefono int) 
+SELECT * FROM users  
+
 INSERT INTO products VALUES (2, 'Pepsi', '1000', 'bsandi')
 UPDATE products SET name = 'Big-Cola' WHERE id = 3
 
