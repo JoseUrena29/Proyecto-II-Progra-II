@@ -24,6 +24,14 @@
         <servlet-name>Controlador</servlet-name>
         <servlet-class>controlador.Controlador</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>usuarioRegistro</servlet-name>
+        <servlet-class>login.usuarioRegistro</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>registrarAutosServlet</servlet-name>
+        <servlet-class>registrarAutos.registrarAutosServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>productServlet</servlet-name>
         <url-pattern>/productServlet</url-pattern>
@@ -47,6 +55,14 @@
     <servlet-mapping>
         <servlet-name>Controlador</servlet-name>
         <url-pattern>/Controlador</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>usuarioRegistro</servlet-name>
+        <url-pattern>/usuarioRegistro</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>registrarAutosServlet</servlet-name>
+        <url-pattern>/registrarAutosServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

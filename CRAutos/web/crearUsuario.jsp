@@ -42,5 +42,5 @@
 %>
 
 <%
-    request.getRequestDispatcher("registroUsuario").forward(request, response);
+    request.getRequestDispatcher("usuarioRegistro").forward(request, response);
 %>
