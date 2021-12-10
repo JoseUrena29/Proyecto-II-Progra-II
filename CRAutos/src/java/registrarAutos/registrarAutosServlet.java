@@ -41,10 +41,27 @@ public class registrarAutosServlet extends HttpServlet {
             out.print("<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ\" crossorigin=\"anonymous\"></script>");
             out.print("<script src=\"https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js\" integrity=\"sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN\" crossorigin=\"anonymous\"></script>");
             out.print("<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js\" integrity=\"sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/\" crossorigin=\"anonymous\"></script>");
-            out.print("<title>Website</title>");
+            out.print("<link href=\"css/estilo.css\" rel=\"stylesheet\" type=\"text/css\"/>");
+            
+            out.print("<title>Registro de Autos</title>");
             out.print("</head>");
             out.print("<body>");
 
+            out.print("<nav class=\"navbar navbar-expand-lg navbar-dark bg-primary\">");
+            out.print("<div class=\"container-fluid\">");
+            out.print("<a href=\"Principal.jsp\"><span class=\"logo\"><img class=\"img-responsive\" src=\"imagen/crautoslogo.png\" hspace=\"5\" vspace=\"8\" width=\"300\"></span></a>");
+            out.print("<button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">");
+            out.print("<span class=\"navbar-toggler-icon\"></span>");
+            out.print("</button>");
+            out.print("<div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">");
+            out.print("<ul class=\"navbar-nav me-auto mb-2 mb-lg-0\">");
+            out.print("</ul>");
+            out.print("<a class=\"btn btn-xs btn-success\" href=\"login.jsp\" >Login</a>");
+            out.print("</div>");
+            out.print("</div>");
+            out.print("</nav>");
+            
+            out.print("<br><br>");
             out.print("<div class=\"container\">");
             out.print("<table class=\"table table-hover\">");
             out.print("  <thead>");
