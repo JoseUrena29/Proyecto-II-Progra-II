@@ -3,8 +3,9 @@
     Created on : 9 dic 2021, 4:39:35
     Author     : LEANDRO
 --%>
-
-<%@page language="java" import="java.sql.*"  contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="modelo.Conexion"%>
+<%@page import="java.sql.*"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <!DOCTYPE html>
 <html>
@@ -56,6 +57,66 @@
                 </div>
             </div>
         </nav>
+
+        <%
+            Conexion con = new Conexion();
+            Statement smt;
+            ResultSet rs;
+            smt = con.getConnection().createStatement();
+            rs = smt.executeQuery("select * from autos");
+
+        %>
+        <br>
+        <br>
+        <div class="container buscar">
+            <a href="registroAutos.jsp" class="btn btn-success">+ Nuevo</a>
+            <form class="form">
+                <input class="form-control" type="text" name="txtbuscar">
+                <input class="btn btn" type="submit" value="Buscar">
+            </form>
+            <%  
+                String nombuscar = request.getParameter("txtbuscar");
+                if (nombuscar != null) {
+                    smt = con.getConnection().createStatement();
+                    rs = smt.executeQuery("select * from autos where marca LIKE" + "'%" + nombuscar + "%'");
+
+                } else {
+                    System.err.println("Error");
+                }
+            %>
+        </div>
+        <div class="container">
+            <br>
+            <h3 class="text-center">Lista de Autos</h3>
+            <hr>
+            <table class="table table-bordered">
+                <tr>
+                    <th class="text-center">ID</th>
+                    <th class="text-center">MARCA</th>
+                    <th class="text-center">MODELO</th>
+                    <th class="text-center">AÑO</th>
+                    <th class="text-center">ESTILO</th>
+                    <th class="text-center">ACCIONES</th>
+                </tr>
+                <%
+                    while (rs.next()) {
+                %>
+                <tr>
+                    <td class="text-center"><%=rs.getInt("id")%></td>
+                    <td class="text-center"><%=rs.getString("marca")%></td>
+                    <td class="text-center"><%=rs.getString("modelo")%></td>
+                    <td class="text-center"><%=rs.getInt("anio")%></td>
+                    <td class="text-center"><%=rs.getString("estilo")%></td>
+                    <td class="text-center">
+                        <a class="btn btn-warming btn-sm">Editar</a>
+                        <a class="btn btn-danger btn-sm">Eliminar</a>
+                    </td>
+                </tr>
+                <%}
+                   
+                %>
+            </table>
+        </div>
         <div class="footer">
             <a href="https://marchamo.ins-cr.com/Marchamo/frmConsultaMarchamo.aspx" target="_blank">
                 <h3 class="greenfont"><b>CONSULTA TU MARCHAMO AQUI</b></h3></a>  
@@ -115,6 +176,6 @@
                 </div>
             </div>
         </section>
-        <br><br>
+        <br><br>        
     </body>
 </html>

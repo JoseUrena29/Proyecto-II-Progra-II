@@ -42,5 +42,5 @@
 %>
 
 <%
-    request.getRequestDispatcher("usuarioRegistro").forward(request, response);
+    request.getRequestDispatcher("Principal.jsp").forward(request, response);
 %>

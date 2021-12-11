@@ -14,6 +14,15 @@ and open the template in the editor.
     box-sizing: border-box;
 }
 
+.buscar{
+    display: flex;
+}
+
+.form{
+    display: flex;
+    padding-left: 400px;
+}
+
 .footer {
   background-color: white;
   opacity: 70%;
@@ -103,7 +112,6 @@ h2{
         transform: rotateY(360deg);
     }
 }
-
 
 
 
