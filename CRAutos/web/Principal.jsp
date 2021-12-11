@@ -3,7 +3,7 @@
     Created on : 9 dic 2021, 4:39:35
     Author     : LEANDRO
 --%>
-<%@page import="modelo.Conexion"%>
+
 <%@page import="java.sql.*"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
@@ -59,11 +59,16 @@
         </nav>
 
         <%
-            Conexion con = new Conexion();
-            Statement smt;
+            Connection con;
+            
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            con = DriverManager.getConnection("jdbc:mysql://localhost/website", "root", "12345678");
+           
+            PreparedStatement ps;
             ResultSet rs;
-            smt = con.getConnection().createStatement();
-            rs = smt.executeQuery("select * from autos");
+            ps=con.prepareStatement("select * from autos");
+            rs=ps.executeQuery();
+            
 
         %>
         <br>
@@ -75,11 +80,10 @@
                 <input class="btn btn" type="submit" value="Buscar">
             </form>
             <%                
-                
                 String nombuscar = request.getParameter("txtbuscar");
                 if (nombuscar != null) {
-                    smt = con.getConnection().createStatement();
-                    rs = smt.executeQuery("select * from autos where marca LIKE" + "'%" + nombuscar + "%'");
+                    ps.getConnection().createStatement();
+                    rs=ps.executeQuery("select * from autos where marca LIKE" + "'%" + nombuscar + "%'");
 
                 } else {
                     System.err.println("Error");
