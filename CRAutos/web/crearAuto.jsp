@@ -41,8 +41,5 @@
     ps.setString(4, estilo);
 
     ps.executeUpdate();
-%>
-
-<%
-    request.getRequestDispatcher("registrarAutosServlet").forward(request, response);
+    response.sendRedirect("Principal.jsp");
 %>

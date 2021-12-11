@@ -39,8 +39,5 @@
     ps.setInt(3, telefono);
 
     ps.executeUpdate();
-%>
-
-<%
-    request.getRequestDispatcher("Principal.jsp").forward(request, response);
+    response.sendRedirect("login.jsp");
 %>
