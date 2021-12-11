@@ -74,7 +74,8 @@
                 <input class="form-control" type="text" name="txtbuscar">
                 <input class="btn btn" type="submit" value="Buscar">
             </form>
-            <%  
+            <%                
+                
                 String nombuscar = request.getParameter("txtbuscar");
                 if (nombuscar != null) {
                     smt = con.getConnection().createStatement();
@@ -83,6 +84,7 @@
                 } else {
                     System.err.println("Error");
                 }
+
             %>
         </div>
         <div class="container">
@@ -98,8 +100,7 @@
                     <th class="text-center">ESTILO</th>
                     <th class="text-center">ACCIONES</th>
                 </tr>
-                <%
-                    while (rs.next()) {
+                <%                    while (rs.next()) {
                 %>
                 <tr>
                     <td class="text-center"><%=rs.getInt("id")%></td>
@@ -113,7 +114,7 @@
                     </td>
                 </tr>
                 <%}
-                   
+
                 %>
             </table>
         </div>
