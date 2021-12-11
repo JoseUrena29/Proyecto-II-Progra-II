@@ -60,15 +60,15 @@
 
         <%
             Connection con;
-            
+
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://localhost/website", "root", "12345678");
-           
+
             PreparedStatement ps;
             ResultSet rs;
-            ps=con.prepareStatement("select * from autos");
-            rs=ps.executeQuery();
-            
+            ps = con.prepareStatement("select * from autos");
+            rs = ps.executeQuery();
+
 
         %>
         <br>
@@ -79,11 +79,10 @@
                 <input class="form-control" type="text" name="txtbuscar">
                 <input class="btn btn" type="submit" value="Buscar">
             </form>
-            <%                
-                String nombuscar = request.getParameter("txtbuscar");
+            <%                String nombuscar = request.getParameter("txtbuscar");
                 if (nombuscar != null) {
                     ps.getConnection().createStatement();
-                    rs=ps.executeQuery("select * from autos where marca LIKE" + "'%" + nombuscar + "%'");
+                    rs = ps.executeQuery("select * from autos where marca like'%" + nombuscar + "%' or modelo like'%" + nombuscar + "%' or anio like'%" + nombuscar + "%'");
 
                 } else {
                     System.err.println("Error");
