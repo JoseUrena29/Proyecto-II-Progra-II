@@ -26,9 +26,3 @@ INSERT INTO autos (id,marca,modelo,anio,estilo) values(2,'BMV','M3',2003,'Deport
 SELECT * FROM autos
 
 truncate table autos
-
-UPDATE products SET name = 'Big-Cola' WHERE id = 3
-
-truncate table products
-
-select MAX(id)+1 from products
