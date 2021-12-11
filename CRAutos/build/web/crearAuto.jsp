@@ -44,5 +44,5 @@
 %>
 
 <%
-    request.getRequestDispatcher("Principal.jsp").forward(request, response);
+    request.getRequestDispatcher("registrarAutosServlet").forward(request, response);
 %>

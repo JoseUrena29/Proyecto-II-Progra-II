@@ -82,6 +82,7 @@
             <%                String nombuscar = request.getParameter("txtbuscar");
                 if (nombuscar != null) {
                     ps.getConnection().createStatement();
+
                     rs = ps.executeQuery("select * from autos where marca like'%" + nombuscar + "%' or modelo like'%" + nombuscar + "%' or anio like'%" + nombuscar + "%'");
 
                 } else {
@@ -117,7 +118,9 @@
                     </td>
                 </tr>
                 <%}
-
+                    rs.close();
+                    ps.close();
+                    con.close();
                 %>
             </table>
         </div>
