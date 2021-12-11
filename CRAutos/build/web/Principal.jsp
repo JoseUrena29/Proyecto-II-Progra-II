@@ -113,8 +113,8 @@
                     <td class="text-center"><%=rs.getInt("anio")%></td>
                     <td class="text-center"><%=rs.getString("estilo")%></td>
                     <td class="text-center">
-                        <a class="btn btn-warming btn-sm">Editar</a>
-                        <a class="btn btn-danger btn-sm">Eliminar</a>
+                        <a href="editAuto.jsp?id=<%=rs.getInt("id")%>" class="btn btn-warming btn-sm">Editar</a>
+                        <a href="deleteAuto.jsp?id=<%=rs.getInt("id")%>" class="btn btn-danger btn-sm">Eliminar</a>
                     </td>
                 </tr>
                 <%}
