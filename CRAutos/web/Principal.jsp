@@ -70,11 +70,15 @@
         %>
         <br>
         <br>
-        <div class="container buscar">
+        <div class="container nuevo">
             <a href="registroAutos.jsp" class="btn btn-success">+ Nuevo</a>
+        </div>
+
+        <div class="container buscar">
+
             <form class="form">
-                <input class="form-control" type="text" name="txtbuscar" justify-content="flex-end">
-                <input class="btn btn-info" type="submit" value=" Buscar" justify-content="flex-end">
+                <input class="form-control" type="text" name="txtbuscar">
+                <input class="btn btn-info" type="submit" value=" Buscar">
             </form>
             <%                String nombuscar = request.getParameter("txtbuscar");
                 if (nombuscar != null) {
@@ -112,7 +116,7 @@
                     <td class="text-center">
                         <a href="editAuto.jsp?id=<%=rs.getInt("id")%>" class="btn btn-info">Editar</a>
                         <a href="deleteAuto.jsp?id=<%=rs.getInt("id")%>" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">Eliminar</a>
-                        <!-- Modal -->
+                        <!-- Modal Eliminar -->
                         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content">
@@ -126,13 +130,39 @@
                                         Desea eliminar el auto seleccionado? 
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" class="btn btn-info">No</button>
+                                        <button type="button"  data-dismiss="modal" class="btn btn-info">No</button>
                                         <a href="deleteAuto.jsp?id=<%=rs.getInt("id")%>" class="btn btn-danger">Yes</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <a href="editAuto.jsp?id=<%=rs.getInt("id")%>" class="btn btn-success">Comprar</a>
+
+                        <a href="deleteAuto.jsp?id=<%=rs.getInt("id")%>" class="btn btn-success" data-toggle="modal" data-target="#exampleModal2">Comprar</a>
+                        <!-- Modal Comprar -->
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Comprar Auto</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Desea comprar el auto seleccionado? 
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+                                        <a href="deleteAuto.jsp?id=<%=rs.getInt("id")%>" class="btn btn-success" onclick="myFunction()">Yes</a>
+                                        <script type="text/javascript">
+                                            function myFunction() {
+                                                alert(" ***AUTO VENDIDO!!*** Su Venta se ha realizo de forma satisfactoria!! Muchas gracias por su compra!!");
+                                            }
+                                        </script> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </td>
                 </tr>
                 <%}

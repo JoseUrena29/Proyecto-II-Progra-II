@@ -16,10 +16,14 @@ and open the template in the editor.
 
 .buscar{
     display: flex;
+    justify-content: flex-end; 
 }
 
-.input{
-    justify-content: flex-end;
+.nuevo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
 }
 
 .form{
@@ -28,18 +32,18 @@ and open the template in the editor.
 }
 
 .footer {
-  background-color: white;
-  opacity: 70%;
-  margin: 1rem;
-  padding: 1rem;
-  border: 2px solid rgb(255, 255, 255);
-  text-align: center;
+    background-color: white;
+    opacity: 70%;
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid rgb(255, 255, 255);
+    text-align: center;
 }
 
 body{
     background-image: url("https://www.wallpapertip.com/wmimgs/0-4123_chromeos-newdefaultwall-default-chrome-background.png");
     background-repeat: no-repeat;
-    
+
 }
 
 h2{
