@@ -63,24 +63,27 @@ public class registrarAutosServlet extends HttpServlet {
 
             out.print("<br><br>");
             out.print("<div class=\"container\">");
-            out.print("<table class=\"table table-hover\">");
+            out.print("<h3 class=\"text-center\">Lista de Autos</h3>");
+            out.print("<hr>");
+            out.print("<br><br>");
+            out.print("<table class=\"table table-bordered\">");
             out.print("  <thead>");
             out.print("    <tr>");
-            out.print("      <th scope=\"col\">ID</th>");
-            out.print("      <th scope=\"col\">Marca</th>");
-            out.print("      <th scope=\"col\">Modelo</th>");
-            out.print("      <th scope=\"col\">Año</th>");
-            out.print("      <th scope=\"col\">Estilo</th>");
+            out.print("      <th scope=\"col\" class=\"text-center\">ID</th>");
+            out.print("      <th scope=\"col\" class=\"text-center\">Marca</th>");
+            out.print("      <th scope=\"col\" class=\"text-center\">Modelo</th>");
+            out.print("      <th scope=\"col\" class=\"text-center\">Año</th>");
+            out.print("      <th scope=\"col\" class=\"text-center\">Estilo</th>");
             out.print("    </tr>");
             out.print("  </thead>");
             out.print("  <tbody>");
 
             while (resultSet.next()) {
-                out.print("      <th scope=\"row\">" + resultSet.getInt(1) + "</th>");
-                out.print("      <td>" + resultSet.getString(2) + "</td>");
-                out.print("      <td>" + resultSet.getString(3) + "</td>");
-                out.print("      <td>" + resultSet.getInt(4) + "</td>");
-                out.print("      <td>" + resultSet.getString(5) + "</td>");
+                out.print("      <th scope=\"row\" class=\"text-center\">" + resultSet.getInt(1) + "</th>");
+                out.print("      <td class=\"text-center\">" + resultSet.getString(2) + "</td>");
+                out.print("      <td class=\"text-center\">" + resultSet.getString(3) + "</td>");
+                out.print("      <td class=\"text-center\">" + resultSet.getInt(4) + "</td>");
+                out.print("      <td class=\"text-center\">" + resultSet.getString(5) + "</td>");
                 out.print("    </tr>");
             }
 

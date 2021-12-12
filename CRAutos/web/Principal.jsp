@@ -38,9 +38,6 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="registrarAutosServlet">Autos Disponibles</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="autos.html">Autos</a>                        
-                        </li>
                     </ul>
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -77,7 +74,7 @@
             <a href="registroAutos.jsp" class="btn btn-success">+ Nuevo</a>
             <form class="form">
                 <input class="form-control" type="text" name="txtbuscar">
-                <input class="btn btn" type="submit" value="Buscar">
+                <input class="btn btn-info" type="submit" value=" Buscar">
             </form>
             <%                String nombuscar = request.getParameter("txtbuscar");
                 if (nombuscar != null) {
@@ -113,8 +110,28 @@
                     <td class="text-center"><%=rs.getInt("anio")%></td>
                     <td class="text-center"><%=rs.getString("estilo")%></td>
                     <td class="text-center">
-                        <a href="editAuto.jsp?id=<%=rs.getInt("id")%>" class="btn btn-warming btn-sm">Editar</a>
-                        <a href="deleteAuto.jsp?id=<%=rs.getInt("id")%>" class="btn btn-danger btn-sm">Eliminar</a>
+                        <a href="editAuto.jsp?id=<%=rs.getInt("id")%>" class="btn btn-info">Editar</a>
+                        <a href="deleteAuto.jsp?id=<%=rs.getInt("id")%>" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">Eliminar</a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Eliminar Auto</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Desea eliminar el auto seleccionado? 
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" class="btn btn-info">No</button>
+                                        <a href="deleteAuto.jsp?id=<%=rs.getInt("id")%>" class="btn btn-danger">Yes</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </td>
                 </tr>
                 <%}
@@ -123,11 +140,14 @@
                     con.close();
                 %>
             </table>
+
+
+            <br><br>  
         </div>
         <div class="footer">
             <a href="https://marchamo.ins-cr.com/Marchamo/frmConsultaMarchamo.aspx" target="_blank">
                 <h3 class="greenfont"><b>CONSULTA TU MARCHAMO AQUI</b></h3></a>  
-        </div>
+        </div><br>
 
 
 
@@ -149,7 +169,7 @@
 
 
         <!--Footer Start-->
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br>
         <section class="footer">
             <div class="container">
                 <div class="row">
