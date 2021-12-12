@@ -18,6 +18,10 @@ and open the template in the editor.
     display: flex;
 }
 
+.input{
+    justify-content: flex-end;
+}
+
 .form{
     display: flex;
     padding-left: 400px;

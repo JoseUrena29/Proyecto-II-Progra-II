@@ -73,8 +73,8 @@
         <div class="container buscar">
             <a href="registroAutos.jsp" class="btn btn-success">+ Nuevo</a>
             <form class="form">
-                <input class="form-control" type="text" name="txtbuscar">
-                <input class="btn btn-info" type="submit" value=" Buscar">
+                <input class="form-control" type="text" name="txtbuscar" justify-content="flex-end">
+                <input class="btn btn-info" type="submit" value=" Buscar" justify-content="flex-end">
             </form>
             <%                String nombuscar = request.getParameter("txtbuscar");
                 if (nombuscar != null) {
@@ -132,6 +132,7 @@
                                 </div>
                             </div>
                         </div>
+                        <a href="editAuto.jsp?id=<%=rs.getInt("id")%>" class="btn btn-success">Comprar</a>
                     </td>
                 </tr>
                 <%}
