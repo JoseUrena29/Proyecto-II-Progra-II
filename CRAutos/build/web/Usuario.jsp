@@ -38,6 +38,8 @@
                 <img src="imagen/1.jpg" alt=""/>
                 <input type="text" name="txtTelefono" placeholder="Telefono"/>
                 <hr>
+                <br>
+                <br>
                 <input id="Guardar" type="submit" value="Registrarse"/>
             </form>
         </div>
@@ -46,6 +48,9 @@
 
             </form>
             <div id="referencias">
+                <br>
+                <br>
+                <br>
                 <a href="Principal.jsp">Regresar a la Pagina Principal</a>
             </div>
         </div>
