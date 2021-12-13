@@ -33,10 +33,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="registroAutos.jsp">Registro de Autos</a>
+                            <a class="nav-link active" aria-current="page" href="registroAutos.jsp"></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="registrarAutosServlet">Autos Disponibles</a>
+                            <a class="nav-link active" aria-current="page" href="registrarAutosServlet"></a>
                         </li>
                     </ul>
                     <div class="dropdown">
@@ -115,6 +115,7 @@
                     <td class="text-center"><%=rs.getString("estilo")%></td>
                     <td class="text-center">
                         <a href="editAuto.jsp?id=<%=rs.getInt("id")%>" class="btn btn-info">Editar</a>
+                        <a href="deleteAuto.jsp?id=<%=rs.getInt("id")%>" class="btn btn-danger">Eliminar2</a>
                         <a href="deleteAuto.jsp?id=<%=rs.getInt("id")%>" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">Eliminar</a>
                         <!-- Modal Eliminar -->
                         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
