@@ -55,30 +55,23 @@
                         <div class="mb-3">
                             <label class="form-label">Marca</label>
                             <select name="txtMarca" class="form-control">
+                                <option>Toyota</option>
+                                <option>Suzuki</option>
+                                <option>Honda</option>
+                                <option>Hyundai</option>
+                                <option>Mitsubishi</option>
+                                <option>Nissan</option>
                                 <option>Audi</option>
                                 <option>BMW</option>
                                 <option>Chevrolet</option>
-                                <option>Daewoo</option>
                                 <option>Daihatsu</option>
-                                <option>Ferrari</option>
-                                <option>Fiat</option>
                                 <option>Ford</option>
-                                <option>Honda</option>
-                                <option>Hyundai</option>
                                 <option>Isuzu</option>
-                                <option>Jaguar</option>
                                 <option>Jeep</option>
                                 <option>Kia</option>
-                                <option>Lamborghini</option>
                                 <option>Lexus</option>
-                                <option>Maserati</option>
                                 <option>Mercedes Benz</option>
-                                <option>Mitsubishi</option>
-                                <option>Nissan</option>
-                                <option>Porsche</option>
-                                <option>Subaru</option>
-                                <option>Suzuki</option>
-                                <option>Toyota</option>
+                                <option>Subaru</option> 
                             </select>
                         </div>
                         <div class="mb-3">
@@ -92,23 +85,16 @@
                         <div class="mb-3">
                             <label class="form-label">Estilo</label>
                             <select name="txtEstilo" class="form-control">
-                                <option>Autocaravana</option>
-                                <option>Berlina</option>
                                 <option>Coupé</option>
+                                <option>Todoterreno/SUV</option>
+                                <option>Hatchback</option>
+                                <option>Sedán</option>
+                                <option>Pick UP</option>
                                 <option>Comercial</option>
                                 <option>Descapotable</option>
-                                <option>Deportivo/HyperCar</option>
+                                <option>Deportivo</option>
                                 <option>Familiar</option>
-                                <option>Hatchback/Compacto</option>
-                                <option>Monovolumen</option>
-                                <option>Mega GT</option>
-                                <option>Pick UP</option>
-                                <option>Pony Car/Muscle Car</option>
-                                <option>Subcompacto</option>
-                                <option>Sedán</option>
-                                <option>Todoterreno/SUV</option>
                                 <option>Urbano</option>
-
                             </select>
                         </div>
                         <button id="btnSave" class="btn btn-primary" type="submit">Registrar Vehiculo</button>    

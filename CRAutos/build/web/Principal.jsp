@@ -115,7 +115,6 @@
                     <td class="text-center"><%=rs.getString("estilo")%></td>
                     <td class="text-center">
                         <a href="editAuto.jsp?id=<%=rs.getInt("id")%>" class="btn btn-info">Editar</a>
-                        <a href="deleteAuto.jsp?id=<%=rs.getInt("id")%>" class="btn btn-danger">Eliminar2</a>
                         <a href="deleteAuto.jsp?id=<%=rs.getInt("id")%>" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">Eliminar</a>
                         <!-- Modal Eliminar -->
                         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
