@@ -8,7 +8,7 @@ use website
 
 show tables
 
-CREATE TABlE users (id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,firstName varchar(30) NOT NULL, email varchar(30) NOT NULL, telefono int NOT NULL)
+CREATE TABlE users (id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,firstName varchar(30) NOT NULL, email varchar(30) NOT NULL UNIQUE, telefono int NOT NULL)
 
 INSERT INTO users (firstName, email,telefono) values ('leandro','leandro9700@gmail.com', 62166673)
 

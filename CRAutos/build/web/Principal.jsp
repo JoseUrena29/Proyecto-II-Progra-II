@@ -80,7 +80,8 @@
                 <input class="form-control" type="text" name="txtbuscar">
                 <input class="btn btn-info" type="submit" value=" Buscar">
             </form>
-            <%                String nombuscar = request.getParameter("txtbuscar");
+            <%                     
+                String nombuscar = request.getParameter("txtbuscar");
                 if (nombuscar != null) {
                     ps.getConnection().createStatement();
 
@@ -116,7 +117,7 @@
                     <td class="text-center">
                         <a href="editAuto.jsp?id=<%=rs.getInt("id")%>" class="btn btn-info">Editar</a>
                         <a href="deleteAuto.jsp?id=<%=rs.getInt("id")%>" class="btn btn-danger" onclick="myFunction1()">Eliminar</a> 
-                        
+
                         <script type="text/javascript">
                             function myFunction1() {
                                 alert(" ***AUTO ELIMINADO!!*** El vehiculo se elimino de la base de datos de forma satisfactoria!!");

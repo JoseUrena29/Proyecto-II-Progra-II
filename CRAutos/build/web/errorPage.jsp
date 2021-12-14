@@ -19,7 +19,7 @@
             <form id="form2">
                 <h1>Error</h1>
                 <h2>El email ya esta registrado en la base de Datos</h2>
-                
+
                 <br>
                 <h2>!Intentelo de Nuevo!</h2>
                 <br>
