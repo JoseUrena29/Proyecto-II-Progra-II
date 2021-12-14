@@ -115,54 +115,19 @@
                     <td class="text-center"><%=rs.getString("estilo")%></td>
                     <td class="text-center">
                         <a href="editAuto.jsp?id=<%=rs.getInt("id")%>" class="btn btn-info">Editar</a>
-                        <a href="deleteAuto.jsp?id=<%=rs.getInt("id")%>" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">Eliminar</a>
-                        <!-- Modal Eliminar -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Eliminar Auto</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        Desea eliminar el auto seleccionado? 
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button"  data-dismiss="modal" class="btn btn-info">No</button>
-                                        <a href="deleteAuto.jsp?id=<%=rs.getInt("id")%>" class="btn btn-danger">Yes</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <a href="deleteAuto.jsp?id=<%=rs.getInt("id")%>" class="btn btn-success" data-toggle="modal" data-target="#exampleModal2">Comprar</a>
-                        <!-- Modal Comprar -->
-                        <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Comprar Auto</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        Desea comprar el auto seleccionado? 
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
-                                        <a href="deleteAuto.jsp?id=<%=rs.getInt("id")%>" class="btn btn-success" onclick="myFunction()">Yes</a>
-                                        <script type="text/javascript">
-                                            function myFunction() {
-                                                alert(" ***AUTO VENDIDO!!*** Su Venta se ha realizo de forma satisfactoria!! Muchas gracias por su compra!!");
-                                            }
-                                        </script> 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <a href="deleteAuto.jsp?id=<%=rs.getInt("id")%>" class="btn btn-danger" onclick="myFunction1()">Eliminar</a> 
+                        
+                        <script type="text/javascript">
+                            function myFunction1() {
+                                alert(" ***AUTO ELIMINADO!!*** El vehiculo se elimino de la base de datos de forma satisfactoria!!");
+                            }
+                        </script> 
+                        <a href="deleteAuto.jsp?id=<%=rs.getInt("id")%>" class="btn btn-success" onclick="myFunction()">Comprar</a>
+                        <script type="text/javascript">
+                            function myFunction() {
+                                alert(" ***AUTO VENDIDO!!*** Su Compra se realizo de forma satisfactoria!! Muchas gracias por su compra!!");
+                            }
+                        </script> 
                     </td>
                 </tr>
                 <%}
