@@ -94,23 +94,16 @@
                         <div class="mb-3">
                             <label class="form-label">Estilo</label>
                             <select name="txtEstilo" class="form-control" value="<%=rs.getString("estilo")%>">
-                                <option>Autocaravana</option>
-                                <option>Berlina</option>
                                 <option>Coupé</option>
+                                <option>Todoterreno/SUV</option>
+                                <option>Hatchback</option>
+                                <option>Sedán</option>
+                                <option>Pick UP</option>
                                 <option>Comercial</option>
                                 <option>Descapotable</option>
-                                <option>Deportivo/HyperCar</option>
+                                <option>Deportivo</option>
                                 <option>Familiar</option>
-                                <option>Hatchback/Compacto</option>
-                                <option>Monovolumen</option>
-                                <option>Mega GT</option>
-                                <option>Pick UP</option>
-                                <option>Pony Car/Muscle Car</option>
-                                <option>Subcompacto</option>
-                                <option>Sedán</option>
-                                <option>Todoterreno/SUV</option>
-                                <option>Urbano</option>
-
+                                <option>Urbano</option> 
                             </select>
                         </div>
                         <button id="btnSave" class="btn btn-primary" type="submit">Editar Vehiculo</button>    
